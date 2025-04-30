@@ -1,20 +1,23 @@
-# Usa la imagen base de Node
-FROM node:18
+# Imagen base liviana y actualizada
+FROM node:18-alpine
 
-# Establece el directorio de trabajo dentro del contenedor
+# Instalación de paquetes necesarios
+RUN apk add --no-cache nano
+
+# Directorio de trabajo
 WORKDIR /app
 
-# Copia los archivos de dependencias
+# Copia solo archivos de dependencias primero (para cache de Docker)
 COPY package*.json ./
 
-# Instala las dependencias
+# Instalación de dependencias
 RUN npm install
 
-# Copia el resto del proyecto
+# Copiar el resto del código fuente
 COPY . .
 
-# Expone el puerto de desarrollo de Angular
+# Exponer el puerto usado por Angular
 EXPOSE 4200
 
-# Comando por defecto al arrancar el contenedor
-CMD ["npm", "run", "start"]
+# Comando por defecto: servir Angular accesible desde el exterior
+CMD ["npm", "run", "start", "--", "--host", "0.0.0.0"]
