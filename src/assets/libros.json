@@ -1,0 +1,39 @@
+{
+  "libro": {
+    "id": 1,
+    "titulo": "20.000 leguas de viaje submarino",
+    "autor": "Julio Verne",
+    "editorial": "Editorial Clásica",
+    "idioma": "Español",
+    "numero_paginas": 416,
+    "dimension": "15 x 23 cm",
+    "disponibilidad": 100,
+    "isbn": "978-84-10-26814-2",
+    "sinopsis": "Un viaje por los océanos del mundo a bordo del Nautilus, un submarino de última tecnología. Acompaña al profesor Aronnax, su sirviente Conseil y el canadiense Ned Land en una aventura inolvidable.",
+    "precio": {
+      "lista": "59.800",
+      "descuento": "53.820",
+      "moneda": "CLP",
+      "descuento_porcentaje": "10%"
+    },
+    "imagenes": [
+      {
+        "url": "https://www.libreriacompany.com/wp-content/uploads/2021/01/20-000-leguas-de-viaje-submarino.jpg",
+        "descripcion": "Portada del libro"
+      },
+      {
+        "url": "https://www.libreriacompany.com/wp-content/uploads/2021/01/20-000-leguas-de-viaje-submarino.jpg",
+        "descripcion": "Portada del libro"
+      },
+      {
+        "url": "https://www.libreriacompany.com/wp-content/uploads/2021/01/20-000-leguas-de-viaje-submarino-2.jpg",
+        "descripcion": "Contraportada del libro"
+      }
+    ],
+    "categoria": {
+      "id": 1,
+      "nombre": "Literatura clásica",
+      "subcategoria": "Ciencia ficción"
+    }
+  }
+}

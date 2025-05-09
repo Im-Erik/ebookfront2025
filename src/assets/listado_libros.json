@@ -1,0 +1,23 @@
+{
+  "libros": [
+    {
+      "titulo": "2000 guitarras",
+      "autor": "Tony Bacon",
+      "moneda": "CLP",
+      "precio_lista": "43.800",
+      "precio_descuento": "39.420",
+      "descuento": "10%",
+      "imagen": "https://www.libreriacompany.com/wp-content/uploads/2021/01/2000-guitarras.jpg"
+    },
+    {
+      "titulo": "20.000 leguas de viaje submarino",
+      "autor": "Julio Verne",
+      "moneda": "CLP",
+      "precio_lista": "59.800",
+      "precio_descuento": "53.820",
+      "descuento": "10%",
+      "imagen": "https://www.libreriacompany.com/wp-content/uploads/2021/01/20-000-leguas-de-viaje-submarino.jpg"
+    }
+  ]
+}
+s
