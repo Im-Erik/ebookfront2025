@@ -3,12 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: 'libros',
-    loadComponent: () => import('./components/libros/libros.component'),
-  },
-  {
-    path: 'libro-details/:id',
-    loadComponent: () =>
-      import('./components/libro-details/libro-details.component'),
+    loadChildren:() => import('./components/libros/libros.routes'),
   },
   {
     path: 'checkout',
